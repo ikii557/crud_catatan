@@ -12,7 +12,7 @@
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                                 class="icon icon-app-store"></i><span class="nav-text">Apps</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="./app-profile.html">Profile</a></li>
+                            <li><a href="./app-profile.html">Profileeeeeeeeeee</a></li>
 
                         </ul>
                     </li>
