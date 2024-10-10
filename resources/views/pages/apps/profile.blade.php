@@ -12,7 +12,7 @@
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">Dasboard</a></li>
-                            <li class="breadcrumb-item active"><a href="/catatan)">Catatan</a></li>
+                            <li class="breadcrumb-item active"><a href="/catatan">Catatan</a></li>
                         </ol>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                             <thead>
                                 <tr>
                                     <th>no</th>
-                                    <th>nama id</th>
+                                    <th>nama</th>
                                     <th>judul</th>
                                 </tr>
                             </thead>

@@ -9,10 +9,8 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>User ID</th>
                     <th>Judul</th>
                     <th>Deskripsi</th>
-                    <th>Isi catatan</th>
                     <th>tanggal dibuat</th>
                     <th>Opsi</th>
                 </tr>
@@ -20,17 +18,17 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>rifki</td>
                     <td>ceritaku</td>
                     <td>mengisahkan keseharian nya</td>
-                    <td>pada hari senin</td>
                     <td>12-12-2023</td>
                     <td>
                         <a href="" class="btn btn-info">Edit</a>
                         <a href="" class="btn btn-danger">hapus</a>
+                        <a href="/isi" class="btn btn-primary">detail</a>
                     </td>
                 </tr>
             </tbody>
+            </div>
         </table>
         </div>
     </div>

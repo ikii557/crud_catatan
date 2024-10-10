@@ -36,3 +36,11 @@ Route::get('/catatan', function () {
 Route::get('/profile', function () {
     return view ('pages.apps.profile');
 });
+
+Route::get('/createcatatan', function () {
+    return view ('pages.catatan.createcatatan');
+});
+
+Route::get('/isi', function () {
+    return view ('pages.catatan.isi');
+});
