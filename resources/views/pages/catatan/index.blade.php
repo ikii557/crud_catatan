@@ -4,7 +4,7 @@
     <div class="card">
         <div class="p-2 mt-2 me-2">
 
-        <p>Daftar catatan</p>
+        <p>Daftar catatan <img src="" alt="user"></p>
         <table class="table table-bordered border-primary">
             <thead>
                 <tr>
