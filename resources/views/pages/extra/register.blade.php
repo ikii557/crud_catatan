@@ -26,18 +26,27 @@
     <div class="container">
         <div class="auth-form">
             <h4 class="text-center mb-4">Sign up for an account</h4>
-            <form action="index.html" method="POST">
+            <form action="/register/store" method="post">
                 <div class="form-group mb-3">
                     <label for="username"><strong>Username</strong></label>
                     <input type="text" id="username" class="form-control" placeholder="Enter your username">
+                    @error('name')
+                            <p class="text-danger">{{$message}}</p>
+                    @enderror
                 </div>
                 <div class="form-group mb-3">
                     <label for="email"><strong>Email</strong></label>
                     <input type="email" id="email" class="form-control" placeholder="hello@example.com">
+                    @error('email')
+                            <p class="text-danger">{{$message}}</p>
+                    @enderror
                 </div>
                 <div class="form-group mb-3">
                     <label for="password"><strong>Password</strong></label>
                     <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                    @error('password')
+                            <p class="text-danger">{{$message}}</p>
+                    @enderror
                 </div>
                 <div class="text-center mt-4">
                     <button type="submit" class="btn btn-primary btn-block w-100">Sign me up</button>

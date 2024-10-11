@@ -16,17 +16,20 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>ceritaku</td>
-                    <td>mengisahkan keseharian nya</td>
-                    <td>12-12-2023</td>
-                    <td>
-                        <a href="" class="btn btn-info">Edit</a>
-                        <a href="" class="btn btn-danger">hapus</a>
-                        <a href="/isi" class="btn btn-primary">detail</a>
-                    </td>
-                </tr>
+                @foreach ($catatan as $no=> $catat )
+                    <tr>
+                        <td>{{$no +1}}</td>
+                        <td>{{$catat->judul}}</td>
+                        <td>{{$catat->deskripsi}}</td>
+                        <td>{{$catat->tanggal_dibuat}}</td>
+                        <td>
+                            <a href="" class="btn btn-info">Edit</a>
+                            <a href="" class="btn btn-danger">hapus</a>
+                            <a href="/isi" class="btn btn-primary">detail</a>
+                        </td>
+                    </tr>
+                @endforeach
+
             </tbody>
             </div>
         </table>

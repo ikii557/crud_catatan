@@ -26,14 +26,20 @@
     <div class="container">
         <div class="auth-form">
             <h4 class="text-center mb-4">Log In Untuk Masuk</h4>
-            <form action="index.html">
+            <form action="/store/login" method="post">
                 <div class="form-group">
                     <label><strong>Email</strong></label>
                     <input type="email" class="form-control" value="hello@example.com">
+                    @error('email')
+                            <p class="text-danger">{{$message}}</p>
+                    @enderror
                 </div>
                 <div class="form-group">
                     <label><strong>Password</strong></label>
                     <input type="password" class="form-control" value="Password">
+                    @error('password')
+                            <p class="text-danger">{{$message}}</p>
+                    @enderror
                 </div>
                 <div class="form-row d-flex justify-content-between mt-4 mb-2">
                     <div class="form-group">

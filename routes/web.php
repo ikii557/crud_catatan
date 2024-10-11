@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CatatanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,34 +16,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/register', function () {
-    return view ('pages.extra.register');
-});
+Route::middleware(['guest'])->group(function () {
+    // register
+    Route::get("/register", [AuthController::class,'register'] );
+    Route::post('pages.extra.register', [AuthController::class,'storeregister'] );
+    //login
+    Route::get("/login", [AuthController::class,'login'] )->name('login');
+    Route::post('pages.extra.login', [AuthController::class,'storelogin'] );
 
-Route::get('/login', function () {
-    return view ('pages.extra.login');
-});
-
-Route::get('/logout', function () {
-    return view ('pages.extra.logout');
 });
 
 Route::get('/', function () {
     return view ('pages.dasboard.index');
 });
-
-Route::get('/catatan', function () {
-    return view ('pages.catatan.index');
-});
-
-Route::get('/profile', function () {
-    return view ('pages.apps.profile');
-});
-
-Route::get('/createcatatan', function () {
-    return view ('pages.catatan.createcatatan');
-});
-
-Route::get('/isi', function () {
-    return view ('pages.catatan.isi');
+Route::middleware(['auth'])->group(function(){
+    // profill
+    Route::get('/profile', [UserController::class,'profile'] );
+    Route::get('/logout', function () {
+        return view ('pages.extra.logout');
+    });
+    // catatan controller
+    Route::get('/catatan', [CatatanController::class,'index']);
+    Route::get('/createcatatan', function () {
+        return view ('pages.catatan.createcatatan');
+    });
+    Route::get('/isi', function () {
+        return view ('pages.catatan.isi');
+    });
 });
