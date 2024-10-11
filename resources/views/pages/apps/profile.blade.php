@@ -13,12 +13,14 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">Dasboard</a></li>
                             <li class="breadcrumb-item active"><a href="/catatan">Catatan</a></li>
+                            <li class="breadcrumb-item "><a href="/editprofile">Edit Profile</a></li>
                         </ol>
                     </div>
                 </div>
                 <!-- row -->
                 <div class="row">
                     <div class="col-lg-12">
+                        <div class="card white">
                         <div class="profile">
                             <div class="profile-head">
                                 <div class="photo-content">
@@ -43,24 +45,19 @@
                                                         <p>UX / UI / FE Designer</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-xl-4 col-sm-4 border-right-1 prf-col">
-                                                    <div class="profile-email">
-                                                        <h4 class="text-muted">No WA</h4>
-                                                        <p>083134000194</p>
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="col-xl-4 col-sm-4 prf-col">
+                                                <div class="col-xl-4 col-sm-4 prf-col">
                                                     <div class="profile-call">
-                                                        <h4 class="text-muted">(+1) 321-837-1030</h4>
+                                                        <h4 class="text-primary">(+62) 831-3400-0194</h4>
                                                         <p>Phone No.</p>
                                                     </div>
-                                                </div> -->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
                     <div class="card">

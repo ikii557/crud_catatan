@@ -37,6 +37,9 @@ Route::get('/', function () {
 });
 // profill
 Route::get('/profile', [UserController::class,'profile'] );
+Route::get('/editprofile',function(){
+    return view ('pages.apps.editprofile');
+});
 Route::get('/logout', [AuthController::class,'logout'] );
 // catatan controller
 Route::get('/createcatatan', [CatatanController::class,'create'] );
