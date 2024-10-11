@@ -48,7 +48,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>copyright © Designed &amp; Developed by <a href="#" target="_blank">WEB rifki</a> 2024</p>
+                <p>copyright © Designed &amp; Developed by <a href="#" target="_blank">Web Catatan</a> 2024</p>
                 <p>Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a></p>
             </div>
         </div>
