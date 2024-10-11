@@ -25,8 +25,6 @@
                                 class="icon icon-single-copy-06"></i><span class="nav-text">Pages</span></a>
                         <ul aria-expanded="false">
                             <li><a href="/profile">Profile</a></li>
-                            <li><a href="/register">Register</a></li>
-                            <li><a href="/login">Login</a></li>
                             <li><a href="/logout">Logout</a></li>
                         </ul>
                     </li>

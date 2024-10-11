@@ -3,7 +3,7 @@
         ***********************************-->
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="user.png" alt=""> <span class="p-2">CATATAN</span>
+                <img class="logo-abbr" src="user.png" alt=""> <span class="p-2">CATATAN {{Auth::user()->name}}</span>
                 <img class="logo-compact" src="{{asset('assets/images/logo-text.png')}}" alt="">
             </a>
 

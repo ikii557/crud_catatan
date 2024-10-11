@@ -12,6 +12,12 @@ class UserController extends Controller
         $users = User::all();
         return view("pages.apps.profile",compact("users"));
     }
+    public function create(){
+        $users = User::all();
+    }
+
+
+
 
     public function profile(){
         return  view('pages.apps.profile');

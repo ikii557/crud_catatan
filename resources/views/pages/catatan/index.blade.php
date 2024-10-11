@@ -1,11 +1,26 @@
 @extends('layouts.app')
 @section('content')
 
+    <div class="row page-titles mx-0">
+        <div class="col-sm-6 p-md-0">
+            <div class="welcome-text">
+                <h4>Hai<span> <strong>{{Auth::user()->name}}</strong> <span>  lihat data catatn anda sekarang</h4>
+                <p class="mb-0"></p>
+            </div>
+        </div>
+        <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Dasboard</a></li>
+                <li class="breadcrumb-item active"><a href="/catatan">Catatan</a></li>
+            </ol>
+        </div>
+    </div>
+
     <div class="card">
         <div class="p-2 mt-2 me-2">
-
-        <p>Daftar catatan <img src="" alt="user"></p>
-        <table class="table table-bordered border-primary">
+            <p class="mb-2"> <a href="/createcatatan" class="btn btn-primary float-right">Tambah Catatan</a></p>
+            <p>Daftar Catatan</p>
+        <table class="table table-bordered border-primary ">
             <thead>
                 <tr>
                     <th>No</th>

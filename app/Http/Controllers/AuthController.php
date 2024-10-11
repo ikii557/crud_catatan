@@ -19,7 +19,7 @@ class AuthController extends Controller
         $request->validate([
             'name'      => 'required|max:255',
             'email'     => 'required|email|unique:users,email',
-            'password'  => 'required|min:8',
+            'password'  => 'required',
         ],[
             'name.required'         => 'Nama harus diisi',
             'name.max'              => 'Nama maksimal 255 karakter',
@@ -59,7 +59,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             // Redirect ke dashboard setelah login sukses
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/');
         } else {
             // Redirect kembali ke login dengan pesan error jika gagal
             return back()->withErrors([

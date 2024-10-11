@@ -2,6 +2,8 @@
 @section('content')
 
 <p class="text-dark">ISI CATATAN</p>
+
+
 <div class="card">
     <div class="p-2 mt-4 me-2">
         <p>ISI CATATAN: {anda}</p>

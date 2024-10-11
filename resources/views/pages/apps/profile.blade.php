@@ -5,7 +5,7 @@
                 <div class="row page-titles mx-0">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
-                            <h4>Hi, Selamat Datang <span>{nama}<span></h4>
+                            <h4>Hi, Selamat Datang <span>{{Auth::user()->name}}<span></h4>
                             <p class="mb-0">Didalam profile kami</p>
                         </div>
                     </div>
@@ -33,7 +33,13 @@
                                             <div class="row">
                                                 <div class="col-xl-4 col-sm-4 border-right-1 prf-col">
                                                     <div class="profile-name">
-                                                        <h4 class="text-primary">Rifki Hadid Anwar</h4>
+                                                        <h4 class="text-primary">{{Auth::user()->name}}</h4>
+                                                        <p>UX / UI / FE Designer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-sm-4 border-right-1 prf-col">
+                                                    <div class="profile-name">
+                                                        <h4 class="text-primary">{{Auth::user()->email}}</h4>
                                                         <p>UX / UI / FE Designer</p>
                                                     </div>
                                                 </div>
@@ -58,7 +64,7 @@
                     </div>
                 </div>
                     <div class="card">
-                        <p class="p-2">daftar catatan {user}</p>
+                        <p class="p-2">daftar catatan {{Auth::user()->name}}</p>
                         <div class="p-2 me-2">
                         <table class="table  table-bordered ">
                             <thead>
