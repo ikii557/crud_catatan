@@ -10,7 +10,6 @@ class CatatanController extends Controller
 {
     //
     public function index(){
-
         $catatan = Catatan::where('user_id',Auth::user()->id)->get();
         return view("pages.catatan.index",compact("catatan"));
     }

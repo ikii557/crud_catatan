@@ -72,11 +72,13 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach ($users as $no=> $catat )
                                 <tr>
-                                    <td>1</td>
-                                    <td>rifki</td>
-                                    <td>ceritaku</td>
+                                    <td>{{$no +1}}</td>
+                                    <td>{{$catat->name}}</td>
+                                    <td>{{$catat->judul}}</td>
                                 </tr>
+                            @endforeach
                             </tbody>
 
                         </table>

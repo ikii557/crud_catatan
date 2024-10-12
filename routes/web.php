@@ -47,9 +47,9 @@ Route::post('/store', [CatatanController::class,'store'] );
 Route::get('/isi', function () {
     return view ('pages.catatan.isi');
 });
+Route::get('/catatan', [CatatanController::class,'index']);
 
 
 
 
-    Route::get('/catatan', [CatatanController::class,'index']);
 });

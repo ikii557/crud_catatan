@@ -30,14 +30,14 @@
                 @csrf
                 <div class="form-group">
                     <label><strong>Email</strong></label>
-                    <input name="email" type="email" class="form-control" value="hello@example.com">
+                    <input name="email" type="email" class="form-control">
                     @error('email')
                             <p class="text-danger">{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group">
                     <label><strong>Password</strong></label>
-                    <input name="password" type="password" class="form-control" value="Password">
+                    <input name="password" type="password" class="form-control" >
                     @error('password')
                             <p class="text-danger">{{$message}}</p>
                     @enderror
